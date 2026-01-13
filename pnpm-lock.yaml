@@ -533,8 +533,8 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0
       esbuild:
-        specifier: ^0.25.0
-        version: 0.25.5
+        specifier: ^0.27.0
+        version: 0.27.2
       flattie:
         specifier: ^1.1.1
         version: 1.1.1
