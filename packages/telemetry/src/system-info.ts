@@ -1,7 +1,6 @@
 import os from 'node:os';
 import { name as ciName, isCI } from 'ci-info';
-import isDocker from 'is-docker';
-import isWSL from 'is-wsl';
+import { isDocker, isWSL } from 'is-system';
 
 /**
  * Astro Telemetry -- System Info
@@ -71,7 +70,7 @@ export function getSystemInfo(versions: { viteVersion: string; astroVersion: str
 		// Environment information
 		isDocker: isDocker(),
 		isTTY: process.stdout.isTTY,
-		isWSL,
+		isWSL: isWSL(),
 		isCI,
 		ciName,
 	};
