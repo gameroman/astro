@@ -6673,12 +6673,9 @@ importers:
       dset:
         specifier: ^3.1.4
         version: 3.1.4
-      is-docker:
-        specifier: ^4.0.0
-        version: 4.0.0
-      is-wsl:
-        specifier: ^3.1.1
-        version: 3.1.1
+      is-system:
+        specifier: 0.3.0
+        version: 0.3.0
       package-manager-detector:
         specifier: ^1.6.0
         version: 1.6.0
@@ -12399,11 +12396,6 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
 
-  is-docker@4.0.0:
-    resolution: {integrity: sha512-LHE+wROyG/Y/0ZnbktRCoTix2c1RhgWaZraMZ8o1Q7zCh0VSrICJQO5oqIIISrcSBtrXv0o233w1IYwsWCjTzA==}
-    engines: {node: '>=20'}
-    hasBin: true
-
   is-extglob@2.1.1:
     resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
@@ -12485,6 +12477,10 @@ packages:
   is-subdir@1.2.0:
     resolution: {integrity: sha512-2AT6j+gXe/1ueqbW6fLZJiIw3F8iXGJtt0yDrZaBhAZEG1raiTxKWU+IPqMCzQAXOUCKdA4UDMgacKH25XG2Cw==}
     engines: {node: '>=4'}
+
+  is-system@0.3.0:
+    resolution: {integrity: sha512-MQ6PWQZRXaHGMYIgAcrEQkJqxHUWAg7HOu3OsMN10xjsqGXAVxM6xn1MuULMrvKywV8/hLgRMrxIb+Y5FWqIUw==}
+    engines: {node: '>=22.12.0'}
 
   is-unicode-supported@0.1.0:
     resolution: {integrity: sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==}
@@ -22257,8 +22253,6 @@ snapshots:
 
   is-docker@3.0.0: {}
 
-  is-docker@4.0.0: {}
-
   is-extglob@2.1.1: {}
 
   is-fullwidth-code-point@2.0.0: {}
@@ -22310,6 +22304,8 @@ snapshots:
   is-subdir@1.2.0:
     dependencies:
       better-path-resolve: 1.0.0
+
+  is-system@0.3.0: {}
 
   is-unicode-supported@0.1.0: {}
 
